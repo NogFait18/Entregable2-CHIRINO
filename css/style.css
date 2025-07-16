@@ -6,6 +6,7 @@
 }
 body{
     background-color: #ccc;
+    margin: 15px;
 }
 input, select, button {
     font-family: Arial, sans-serif;
