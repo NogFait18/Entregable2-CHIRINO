@@ -7,6 +7,7 @@
 body{
     background-color: #ccc;
     margin: 15px;
+
 }
 input, select, button {
     font-family: Arial, sans-serif;
@@ -102,7 +103,7 @@ input:focus, select:focus {
     cursor: pointer;
 }
 .modificar:hover{
-    background-color: #C3BB38;
+    background-color: #e2da41;
 }
 .eliminar{
     background-color: #FF3823;

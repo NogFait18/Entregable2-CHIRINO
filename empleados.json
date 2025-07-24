@@ -1,0 +1,30 @@
+[
+    {
+        "id": 0,
+        "nombre": "Fausto",
+        "edad": 19,
+        "dni": 46000000,
+        "puesto": "Frontend"
+    },
+    {
+        "id": 1,
+        "nombre": "Lola",
+        "edad": 25,
+        "dni": 43000000,
+        "puesto": "Backend"
+    },
+    {
+        "id": 2,
+        "nombre": "Giuli",
+        "edad": 20,
+        "dni": 45000000,
+        "puesto": "FullStack"
+    },
+    {
+        "id": 3,
+        "nombre": "Tito",
+        "edad": 19,
+        "dni": 46000000,
+        "puesto": "Frontend"
+    }
+]
