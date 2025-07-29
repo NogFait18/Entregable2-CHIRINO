@@ -24,23 +24,11 @@ form.addEventListener("submit", function(e) {
 
     // Validar campos
     if (nombre.value === "" || edad.value === "" || dni.value === "" || puesto.value === "") {
-        Toastify({
-            text: "¡Error: Faltan campos por completar!",
-            duration: 2000,
-            gravity: "top",
-            position: "right",
-            style: {
-                width:"fit-content",
-                height:"2rem",
-                background: "linear-gradient(to right, #b00000ff, #c93d3dff)",
-                borderRadius:"10px",
-                display:"flex",
-                alignItems:"center",
-                padding:"10px",
-                fontSize:"15px",
-                color:"white",
-            }
-        }).showToast();
+        Swal.fire({
+        title: "Error",
+        text: "Hay campos del formulario vacios, por favor completar!",
+        icon: "error"
+        });
         return; 
     }
 
@@ -49,23 +37,11 @@ form.addEventListener("submit", function(e) {
     const edadNum = parseInt(edad.value);
     const dniNum = parseInt(dni.value);
     if(isNaN(edad.value) || isNaN(dni.value)){
-        Toastify({
-            text: "¡Error: Los campos de Edad y DNI tienen que ser numeros!",
-            duration: 2000,
-            gravity: "top",
-            position: "right",
-            style: {
-                width:"fit-content",
-                height:"2rem",
-                background: "linear-gradient(to right, #b00000ff, #c93d3dff)",
-                borderRadius:"10px",
-                display:"flex",
-                alignItems:"center",
-                padding:"10px",
-                fontSize:"15px",
-                color:"white",
-            }
-        }).showToast();
+        Swal.fire({
+        title: "Error",
+        text: "¡Los campos de Edad y DNI tienen que ser numeros!",
+        icon: "error"
+        });
         return; 
     }
     empleados.push({
@@ -75,24 +51,11 @@ form.addEventListener("submit", function(e) {
         dni: dni.value,
         puesto: puesto.value
     });
-    Toastify({
-        text: "¡Empleado Agregado con Exito!",
-        duration: 2000,
-        gravity: "top",
-        position: "right",
-        style: {
-                width:"fit-content",
-                height:"2rem",
-                background: "linear-gradient(to right, #00b09b, #60c93dff)",
-                position:"fixed",
-                borderRadius:"10px",
-                display:"flex",
-                alignItems:"center",
-                padding:"10px",
-                fontSize:"15px",
-                color:"white"
-        }
-    }).showToast();
+    Swal.fire({
+    title: "Éxito",
+    text: "¡Empleado agregado con exito!",
+    icon: "success"
+    });
 
 
     console.log(empleados);
