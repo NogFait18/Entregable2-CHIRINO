@@ -36,7 +36,7 @@ form.addEventListener("submit", function(e) {
     /* Validación de edad y DNI */
     const edadNum = parseInt(edad.value);
     const dniNum = parseInt(dni.value);
-    if(isNaN(edad.value) || isNaN(dni.value)){
+    if(isNaN(edadNum) || isNaN(dniNum)){
         Swal.fire({
         title: "Error",
         text: "¡Los campos de Edad y DNI tienen que ser numeros!",
@@ -58,7 +58,6 @@ form.addEventListener("submit", function(e) {
     });
 
 
-    console.log(empleados);
     localStorage.setItem("empleados", JSON.stringify(empleados));
 
     form.reset(); // Limpiar el formulario después de agregar

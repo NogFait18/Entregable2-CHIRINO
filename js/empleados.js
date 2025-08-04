@@ -1,7 +1,7 @@
 let empleadosContainer = document.getElementById("empleados-contenedor");
 let empleadosStorage = localStorage.getItem("empleados");
 empleadosStorage = JSON.parse(empleadosStorage) || [];
-console.log(empleadosStorage)
+
 
 let empleadosEliminados = []
 
