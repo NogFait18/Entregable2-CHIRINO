@@ -15,7 +15,7 @@ Permite agregar, visualizar, modificar y eliminar empleados, guardando los datos
 
 ## 🛠️ Tecnologías y conceptos aplicados
 - HTML5 + CSS3
-- JavaScript (Vanilla)
+- JavaScript 
 - Manipulación del DOM y manejo de eventos
 - Uso de Arrays y Objetos
 - Almacenamiento local con `localStorage`
